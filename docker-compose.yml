@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  lambda:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: lambda-local
+    ports:
+      - "9000:8080"
+    env_file:
+      - .env
+    volumes:
+      - ./src:/var/task
+    command: ["app.lambda_handler"]

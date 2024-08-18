@@ -1,0 +1,15 @@
+
+### Post
+POST http://localhost:9000/2015-03-31/functions/function/invocations
+Content-Type: application/json
+
+{
+  "data": "https://example.com",
+  "size": 10,
+  "errorCorrectionLevel": "H",
+  "margin": 4,
+  "color": {
+    "dark": "#000000",
+    "light": "#ffffff"
+  }
+}
