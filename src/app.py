@@ -4,6 +4,7 @@ import qrcode
 from io import BytesIO
 from jsonschema import validate, ValidationError
 
+
 # Definir el esquema JSON
 QR_CODE_SCHEMA = {
     "type": "object",
